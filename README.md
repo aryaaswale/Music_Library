@@ -2,22 +2,22 @@
 
 A modern music library application demonstrating **Micro Frontend Architecture**, **Role-Based Authentication**, and advanced **JavaScript array methods** (map, filter, reduce).
 
-## 🎯 Project Overview
+##  Project Overview
 This application fulfills all requirements from the frontend developer assignment:
 
-- ✅ **Micro Frontend Architecture** - Split into Main App (container) and Music Library (dynamic module)
-- ✅ **Music Library UI** - Clean interface with filter, sort, and group functionality
-- ✅ **Authentication & Role Management** - JWT-based with admin/user roles
-- ✅ **JavaScript Built-in Methods** - Extensive use of map, filter, reduce
-- ✅ **Beautiful Design** - Modern music streaming interface with dark theme
+-  **Micro Frontend Architecture** - Split into Main App (container) and Music Library (dynamic module)
+-  **Music Library UI** - Clean interface with filter, sort, and group functionality
+-  **Authentication & Role Management** - JWT-based with admin/user roles
+-  **JavaScript Built-in Methods** - Extensive use of map, filter, reduce
+-  **Beautiful Design** - Modern music streaming interface with dark theme
 
-## 🚀 Live Demo
+## Live Demo
 
 - **Main Application**: [Live Demo Link](https://lovable.dev/projects/33e1166c-886c-41e1-a9e2-8353153411f4)
 - **Micro Frontend**: Integrated within the main app using lazy loading
 
 
-## 🏃‍♂️ How to Run Locally
+## How to Run Locally
 
 ```bash
 # Clone the repository
@@ -36,7 +36,8 @@ npm run dev
 # http://localhost:8080
 ```
 
-🚀 How It Was Deployed
+## How It Was Deployed:
+
 The project is deployed using Netlify:
    Connected GitHub repo to Netlify.
 
@@ -47,7 +48,7 @@ Set the following build settings:
 
 🔗 Live Site: https://your-netlify-site.netlify.app
 
-## 🔑 Demo Credentials
+Demo Credentials
 
 ### Admin User (Can Add/Delete Songs)
 - **Email**: `admin@musicverse.com`
@@ -57,7 +58,7 @@ Set the following build settings:
 - **Email**: `user@musicverse.com`
 - **Password**: `user123`
 
-## 🏗️ Architecture Explanation
+Architecture Explanation
 
 ### Micro Frontend Implementation
 
@@ -86,7 +87,7 @@ The application is split into two logical parts:
 - **Role-Based UI**: Admin users see add/delete controls, regular users see view-only interface
 - **Token Management**: Automatic token validation and expiration handling
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 src/
