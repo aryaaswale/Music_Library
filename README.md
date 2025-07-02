@@ -17,15 +17,6 @@ This application fulfills all requirements from the frontend developer assignmen
 - **Main Application**: [Live Demo Link](https://lovable.dev/projects/33e1166c-886c-41e1-a9e2-8353153411f4)
 - **Micro Frontend**: Integrated within the main app using lazy loading
 
-## 🔑 Demo Credentials
-
-### Admin User (Can Add/Delete Songs)
-- **Email**: `admin@musicverse.com`
-- **Password**: `admin123`
-
-### Regular User (View/Filter Only)
-- **Email**: `user@musicverse.com`
-- **Password**: `user123`
 
 ## 🏃‍♂️ How to Run Locally
 
@@ -45,6 +36,27 @@ npm run dev
 # Open in browser
 # http://localhost:8080
 ```
+
+🚀 How It Was Deployed
+The project is deployed using Netlify:
+   Connected GitHub repo to Netlify.
+
+Set the following build settings:
+   Build Command: npm run build
+   Publish Directory: dist
+   Netlify auto-builds and hosts the app.
+
+🔗 Live Site: https://your-netlify-site.netlify.app
+
+## 🔑 Demo Credentials
+
+### Admin User (Can Add/Delete Songs)
+- **Email**: `admin@musicverse.com`
+- **Password**: `admin123`
+
+### Regular User (View/Filter Only)
+- **Email**: `user@musicverse.com`
+- **Password**: `user123`
 
 ## 🏗️ Architecture Explanation
 
@@ -75,75 +87,6 @@ The application is split into two logical parts:
 - **Role-Based UI**: Admin users see add/delete controls, regular users see view-only interface
 - **Token Management**: Automatic token validation and expiration handling
 
-## 🎵 Core Features
-
-### Music Library UI
-- **Clean Interface**: Modern card-based layout with hover effects
-- **Search**: Real-time search across song title, artist, and album
-- **Filtering**: Filter by genre with dropdown selection
-- **Sorting**: Sort by title, artist, album, or year (ascending/descending)
-- **Grouping**: Group songs by artist, album, genre, or view all
-
-### JavaScript Built-in Methods Usage
-
-The application extensively uses JavaScript's built-in array methods:
-
-**Filter Method**:
-```javascript
-songs.filter(song => {
-  const searchMatch = song.title.toLowerCase().includes(search.toLowerCase());
-  const genreMatch = filters.genre === '' || song.genre === filters.genre;
-  return searchMatch && genreMatch;
-})
-```
-
-**Map Method**:
-```javascript
-songs.map(song => song.artist)
-  .filter((artist, index, array) => array.indexOf(artist) === index)
-```
-
-**Reduce Method**:
-```javascript
-filteredSongs.reduce((groups, song) => {
-  const key = song[groupBy];
-  if (!groups[key]) groups[key] = [];
-  groups[key].push(song);
-  return groups;
-}, {})
-```
-
-### Role-Based Features
-
-**Admin Capabilities**:
-- Add new songs to the library
-- Delete existing songs
-- Full access to all features
-
-**User Capabilities**:
-- View music library
-- Search and filter songs
-- Sort and group songs
-- Read-only access
-
-## 🎨 Design System
-
-- **Theme**: Dark mode with vibrant music-themed colors
-- **Colors**: Purple, blue, pink gradients for visual appeal
-- **Components**: Custom shadcn/ui components with music variants
-- **Animations**: Smooth transitions and hover effects
-- **Typography**: Clean, modern font hierarchy
-
-## 🛠️ Technologies Used
-
-- **React 18** - Functional components with hooks
-- **TypeScript** - Type safety and better developer experience
-- **Vite** - Fast build tool and development server
-- **Tailwind CSS** - Utility-first CSS framework
-- **shadcn/ui** - Beautiful, accessible UI components
-- **React Context** - State management for auth and music data
-- **React Query** - Server state management (ready for API integration)
-
 ## 📁 Project Structure
 
 ```
@@ -159,39 +102,23 @@ src/
 └── pages/             # Page components
 ```
 
-## 🚀 Deployment Strategy
+### Role-Based Features
 
-For production deployment:
+**Admin Capabilities**:
+- Add new songs to the library
+- Delete existing songs
+- Full access to all features
 
-1. **Main App**: Deploy to Netlify/Vercel as primary application
-2. **Music Library Micro Frontend**: Deploy as separate application
-3. **Module Federation**: Configure Webpack Module Federation to load micro frontend dynamically
-4. **Environment Variables**: Configure URLs for micro frontend endpoints
+**User Capabilities**:
+- View music library
+- Search and filter songs
+- Sort and group songs
+- Read-only access
 
-## 📈 Future Enhancements
 
-- Real backend integration with Node.js/Express
-- Actual Module Federation with separate deployments
-- Database persistence (PostgreSQL/MongoDB)
-- Real-time updates with WebSockets
-- Audio playback functionality
-- Playlist management
-- User preferences and favorites
 
-## 🏆 Assignment Compliance
 
-This project fulfills all assignment requirements:
 
-- ✅ **Music Library UI** with clean design
-- ✅ **Filter, Sort, Group** functionality using map, filter, reduce
-- ✅ **Micro Frontend Architecture** with container and module
-- ✅ **Authentication** with in-memory JWT approach
-- ✅ **Role Management** (admin/user) with appropriate UI controls
-- ✅ **React** functional components with hooks
-- ✅ **Modern styling** with Tailwind CSS
-- ✅ **State management** using Context API
-- ✅ **Deployment ready** for production
 
----
 
 **Built for Frontend Developer Evaluation** 🎯
