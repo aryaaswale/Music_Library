@@ -3,7 +3,6 @@
 A modern music library application demonstrating **Micro Frontend Architecture**, **Role-Based Authentication**, and advanced **JavaScript array methods** (map, filter, reduce).
 
 ## 🎯 Project Overview
-
 This application fulfills all requirements from the frontend developer assignment:
 
 - ✅ **Micro Frontend Architecture** - Split into Main App (container) and Music Library (dynamic module)
