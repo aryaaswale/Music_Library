@@ -13,7 +13,7 @@ This application fulfills all requirements from the frontend developer assignmen
 
 ## Live Demo
 
-- **Main Application**: [Live Demo Link](https://lovable.dev/projects/33e1166c-886c-41e1-a9e2-8353153411f4)
+- **Main Application**: [Live Demo Link](https://aryaaswalemusicverse.netlify.app/)
 - **Micro Frontend**: Integrated within the main app using lazy loading
 
 
@@ -46,7 +46,7 @@ Set the following build settings:
    Publish Directory: dist
    Netlify auto-builds and hosts the app.
 
-🔗 Live Site: https://your-netlify-site.netlify.app
+🔗 Live Site: https://aryaaswalemusicverse.netlify.app/
 
 Demo Credentials
 
