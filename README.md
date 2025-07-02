@@ -9,7 +9,6 @@ This application fulfills all requirements from the frontend developer assignmen
 -  **Music Library UI** - Clean interface with filter, sort, and group functionality
 -  **Authentication & Role Management** - JWT-based with admin/user roles
 -  **JavaScript Built-in Methods** - Extensive use of map, filter, reduce
--  **Beautiful Design** - Modern music streaming interface with dark theme
 
 ## Live Demo
 
@@ -24,7 +23,7 @@ This application fulfills all requirements from the frontend developer assignmen
 git clone <YOUR_GIT_URL>
 
 # Navigate to project directory
-cd music-verse-frontend-fusion
+cd Music_Library
 
 # Install dependencies
 npm install
@@ -36,7 +35,7 @@ npm run dev
 # http://localhost:8080
 ```
 
-## How It Was Deployed:
+How It Was Deployed:
 
 The project is deployed using Netlify:
    Connected GitHub repo to Netlify.
@@ -50,12 +49,12 @@ Set the following build settings:
 
 Demo Credentials
 
-### Admin User (Can Add/Delete Songs)
-- **Email**: `admin@musicverse.com`
+Admin User (Can Add/Delete Songs)
+- **Email: `admin@musicverse.com`
 - **Password**: `admin123`
 
-### Regular User (View/Filter Only)
-- **Email**: `user@musicverse.com`
+Regular User (View/Filter Only)
+- Email: `user@musicverse.com`
 - **Password**: `user123`
 
 Architecture Explanation
@@ -74,7 +73,7 @@ The application is split into two logical parts:
    - Loaded dynamically via React Suspense
    - Contains all music-related functionality
 
-**Note**: In a production environment, the Music Library would be:
+
 - Built as a separate application
 - Deployed independently 
 - Loaded via Webpack Module Federation or similar technology
@@ -91,16 +90,19 @@ The application is split into two logical parts:
 
 ```
 src/
-├── components/
-│   ├── auth/           # Authentication components
-│   ├── layout/         # Layout components (Header, etc.)
-│   ├── music/          # Music Library micro frontend
-│   └── ui/            # shadcn/ui components
-├── contexts/          # React Context providers
-├── types/             # TypeScript type definitions
-├── hooks/             # Custom React hooks
-└── pages/             # Page components
+─ components/
+─ auth/             Authentication components
+─ layout/           Layout components (Header, etc.)
+─ music/            Music Library micro frontend
+ 	─ ui/              shadcn/ui components
+─ contexts/            React Context providers
+─ types/               TypeScript type definitions
+─ hooks/               Custom React hooks
+─ pages/               Page components
 ```
+
+    Role-Based Features
+
 
 ### Role-Based Features
 
@@ -115,10 +117,3 @@ src/
 - Sort and group songs
 - Read-only access
 
-
-
-
-
-
-
-**Built for Frontend Developer Evaluation** 🎯
